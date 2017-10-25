@@ -19,7 +19,7 @@ public class Fragment1 extends android.support.v4.app.Fragment { //importar da s
         View view = inflater.inflate(R.layout.layout_frag1, null);
 
         TextView tv = (TextView) view.findViewById(R.id.textView); //pegar via view
-        tv.setText("Fragment 1");
+        tv.setText("Fragmento 1");
 
         return view;
     }

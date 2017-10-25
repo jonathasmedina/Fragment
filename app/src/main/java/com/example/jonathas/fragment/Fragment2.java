@@ -12,7 +12,7 @@ import android.widget.TextView;
  * Created by Jonathas on 22/08/2017.
  */
 
-public class Fragment2 extends Fragment {
+public class Fragment2 extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.layout_frag2, null);
@@ -21,5 +21,11 @@ public class Fragment2 extends Fragment {
         tv.setText("Fragment 2");
 
         return view;
+    }
+
+    public void alteraTextView(String txt) {
+
+        TextView tv = (TextView) getView().findViewById(R.id.textView); //pegar via view
+        tv.setText(txt);
     }
 }
